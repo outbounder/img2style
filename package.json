@@ -1,0 +1,20 @@
+{
+  "author": "",
+  "name": "img2style",
+  "version": "0.0.0",
+  "dependencies": {
+    "glob": "latest",
+    "underscore": "latest",
+    "shelljs": "latest",
+    "imagemagick": "latest",
+    "async": "latest"
+  },
+  "bin": {
+    "img2style": "./bin/img2style"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}

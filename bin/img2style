@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+var Img2Style = require("../img2style");
+
+if(process.argv.length == 5) {
+  var instance = new Img2Style(process.argv[2], process.argv[3]);
+  instance.generate(process.argv[4], function(){
+    console.log("done writing "+process.argv[4]);
+  });
+} else {
+  console.log("img2style folder matchPattern target");
+  console.log("example: img2style ~/images *.png ~/styles/images.css");
+}
